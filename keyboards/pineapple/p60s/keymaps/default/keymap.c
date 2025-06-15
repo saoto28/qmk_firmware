@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------|   |------+------+------+------+------+------+------+-------------
    * |LShift|  z/Z |  x/X |  c/C |  v/V |  b/B |   |  n/N |  m/M |  ,/< |  ./> |  //? |RShift|      | PgUp |  Up  |
    * |------+------+------+------+------+------|   |------+------+------+------+------+------+      +------+------+------.
-   * | LCTRL|NUM/ｱ | LGUI | Alt  | Space|    |Space| FNC  | Alt  | RCTRL|      | Caps |  Del |      | Left | Down | Right|
+   * | LCTRL| NUM  | LGUI | Alt  | Space|    |Space| FNC  | Alt  | RCTRL|      | Caps |  Del |      | Left | Down | Right|
    * `----------------------------------'    `---------------------------      ---------------      ---------------------.
    */
     [_BASE] = LAYOUT(
@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_GRV,   KC_Q,    KC_W,      KC_E,     KC_R,            KC_T,     KC_Y,   KC_U,           KC_I,    KC_O,    KC_P,     KC_LBRC, KC_RBRC, KC_BSLS,
       KC_TAB,  KC_A,    KC_S,      KC_D,     KC_F,            KC_G,     KC_H,   KC_J,           KC_K,    KC_L,    KC_SCLN,  KC_QUOT, KC_ENT,  KC_PGDN,
       KC_LSFT,  KC_Z,    KC_X,      KC_C,     KC_V,            KC_B,     KC_N,   KC_M,           KC_COMM, KC_DOT,  KC_SLSH,  KC_RSFT, KC_PGUP, KC_UP,
-      KC_LCTL,  LT(_NUM,A(KC_GRV)), KC_LGUI, KC_LALT, KC_SPC, KC_SPC, LT(_FNC,JP_MHEN), KC_RALT, KC_RCTL, KC_CAPS,  KC_DEL,   KC_LEFT, KC_DOWN, KC_RGHT
+      KC_LCTL,  TT(_NUM), KC_LGUI, KC_LALT, KC_SPC, KC_SPC, LT(_FNC,JP_MHEN), KC_RALT, KC_RCTL, KC_CAPS,  KC_DEL,   KC_LEFT, KC_DOWN, KC_RGHT
     ),
  /* Fnc
    * ,-----------------------------------------.   ,------------------------------------------------.
@@ -73,3 +73,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______,  _______,  _______,  _______,  _______,  _______, _______
     )
 };
+
+// refer: https://www.reddit.com/r/olkb/comments/fva7wq/layer_indication_leds_qmk/
+void keyboard_pre_init_user(void) {
+    setPinOutput(C7);  // initialize for LED
+//    setPinOutput(B1);  // initialize B1 for LED
+}
+
+layer_state_t layer_state_set_user(layer_state_t state) {
+    switch (get_highest_layer(state)) {
+        case _NUM:
+            writePinHigh(C7);
+            // writePinLow(B1);
+            break;
+        default:
+            writePinLow(C7);
+            // writePinLow(B1);
+            break;
+    }
+    return state; 
+}
