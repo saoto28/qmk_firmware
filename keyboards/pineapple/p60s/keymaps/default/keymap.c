@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_GRV,   KC_Q,    KC_W,      KC_E,     KC_R,            KC_T,     KC_Y,   KC_U,           KC_I,    KC_O,    KC_P,     KC_LBRC, KC_RBRC, KC_BSLS,
       KC_TAB,  KC_A,    KC_S,      KC_D,     KC_F,            KC_G,     KC_H,   KC_J,           KC_K,    KC_L,    KC_SCLN,  KC_QUOT, KC_ENT,  KC_PGDN,
       KC_LSFT,  KC_Z,    KC_X,      KC_C,     KC_V,            KC_B,     KC_N,   KC_M,           KC_COMM, KC_DOT,  KC_SLSH,  KC_RSFT, KC_PGUP, KC_UP,
-      KC_LCTL,  TT(_NUM), KC_LGUI, KC_LALT, KC_SPC, KC_SPC, LT(_FNC,JP_MHEN), KC_RALT, KC_RCTL, KC_CAPS,  KC_DEL,   KC_LEFT, KC_DOWN, KC_RGHT
+      KC_LCTL,  TT(_NUM), KC_LGUI, KC_LALT, KC_SPC,     KC_SPC, LT(_FNC,JP_MHEN), KC_RALT,     KC_RCTL, KC_CAPS,  KC_DEL,   KC_LEFT, KC_DOWN, KC_RGHT
     ),
  /* Fnc
    * ,-----------------------------------------.   ,------------------------------------------------.
@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------|   |------|------+------+------+------+------+------+------|
    * |      |      | PrtSc|      |      | Home |   | PgUp | Left | Down |  Up  | Right|      |      |                    |
    * |------+------+------+------+------+------|   |------+------+------+------+------+------+------+------|
-   * |      | Mute | VolDn| VOlUp|      | End  |   | PgDn | BriDn| BriUp|WWW HM|      |      |      |      |      |
+   * |      | Mute | VolDn| VOlUp|      | End  |   | PgDn | BriDn| BriUp|WWW HM|BL_DOWN|BL_UP|      |      |      |
    * |------+------+------+------+------+------|   |------+------+------+------+------+------+      +------|
    * |      |      |      |      |      |      |   |      |      |      |      |      |      |      |      |      |      |
    * `----------------------------------'    `---------------------------      ---------------      ---------------------.
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______, KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,      KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12, KC_PDOT,
       KC_ESC,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,      KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12, _______,
       _______, _______,  KC_PSCR,  _______,  _______, KC_HOME,  KC_PGUP,    KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  _______,   _______, _______,
-      _______, KC_MUTE,  KC_VOLD,  KC_VOLU,  _______, KC_END,   KC_PGDN,    _______,  KC_BRID,  KC_BRIU,  KC_WHOM,  _______,  _______, _______,
+      _______, KC_MUTE,  KC_VOLD,  KC_VOLU,  _______, KC_END,   KC_PGDN,    KC_BRID,  KC_BRIU,  KC_WHOM,  BL_DOWN,  BL_UP, _______, _______,
       _______, _______,  _______,  _______,  _______,  _______,    _______,  _______,  _______,  _______,  _______,  _______,  _______, _______
     ),
  /* Num
