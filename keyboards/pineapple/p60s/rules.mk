@@ -1,3 +1,3 @@
-BACKLIGHT_ENABLE = yes       # Enable keyboard backlight functionality
-BACKLIGHT_DRIVER = software
+# BACKLIGHT_ENABLE = yes       # Enable keyboard backlight functionality
+# BACKLIGHT_DRIVER = software
 
