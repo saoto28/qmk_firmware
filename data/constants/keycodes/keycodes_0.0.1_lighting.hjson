@@ -3,7 +3,6 @@
         "0x7800": {
             "group": "backlight",
             "key": "QK_BACKLIGHT_ON",
-            "label": "Backlight On",
             "aliases": [
                 "BL_ON"
             ]
@@ -11,7 +10,6 @@
         "0x7801": {
             "group": "backlight",
             "key": "QK_BACKLIGHT_OFF",
-            "label": "Backlight Off",
             "aliases": [
                 "BL_OFF"
             ]
@@ -19,7 +17,6 @@
         "0x7802": {
             "group": "backlight",
             "key": "QK_BACKLIGHT_TOGGLE",
-            "label": "Toggle Backlight",
             "aliases": [
                 "BL_TOGG"
             ]
@@ -27,7 +24,6 @@
         "0x7803": {
             "group": "backlight",
             "key": "QK_BACKLIGHT_DOWN",
-            "label": "Backlight Down",
             "aliases": [
                 "BL_DOWN"
             ]
@@ -35,7 +31,6 @@
         "0x7804": {
             "group": "backlight",
             "key": "QK_BACKLIGHT_UP",
-            "label": "Backlight Up",
             "aliases": [
                 "BL_UP"
             ]
@@ -43,7 +38,6 @@
         "0x7805": {
             "group": "backlight",
             "key": "QK_BACKLIGHT_STEP",
-            "label": "Backlight Step",
             "aliases": [
                 "BL_STEP"
             ]
@@ -51,7 +45,6 @@
         "0x7806": {
             "group": "backlight",
             "key": "QK_BACKLIGHT_TOGGLE_BREATHING",
-            "label": "Toggle Breathing",
             "aliases": [
                 "BL_BRTG"
             ]

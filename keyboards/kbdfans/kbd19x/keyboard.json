@@ -1,6 +1,7 @@
 {
     "keyboard_name": "KBD19x",
     "manufacturer": "KBDfans",
+    "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/kbdfans/kbd19x",
     "maintainer": "jshuf, mechmerlin",
     "usb": {
         "vid": "0x4B42",
@@ -10,6 +11,8 @@
     "features": {
         "backlight": true,
         "bootmagic": true,
+        "command": false,
+        "console": false,
         "extrakey": true,
         "mousekey": true,
         "nkro": true,

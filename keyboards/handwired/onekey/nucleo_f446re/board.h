@@ -4,5 +4,6 @@
 
 #include_next <board.h>
 
-// Configure clocks to use onboard STLINKs MCO as HSE is not populated by default
+#undef STM32_HSECLK
+#define STM32_HSECLK 8000000U
 #define STM32_HSE_BYPASS

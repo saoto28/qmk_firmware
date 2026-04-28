@@ -73,7 +73,8 @@ __attribute__((weak)) bool qp_sh1107_init(painter_device_t device, painter_rotat
         sh1107_init_sequence[20] = 0x02;
     }
 
-    return qp_comms_bulk_command_sequence(device, sh1107_init_sequence, sizeof(sh1107_init_sequence));
+    qp_comms_bulk_command_sequence(device, sh1107_init_sequence, sizeof(sh1107_init_sequence));
+    return true;
 }
 
 // Screen flush

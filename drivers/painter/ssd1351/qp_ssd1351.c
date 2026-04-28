@@ -44,9 +44,7 @@ __attribute__((weak)) bool qp_ssd1351_init(painter_device_t device, painter_rota
         SSD1351_DISPLAYON,             5,  0,
     };
     // clang-format on
-    if (!qp_comms_bulk_command_sequence(device, ssd1351_init_sequence, sizeof(ssd1351_init_sequence))) {
-        return false;
-    }
+    qp_comms_bulk_command_sequence(device, ssd1351_init_sequence, sizeof(ssd1351_init_sequence));
 
     // Configure the rotation (i.e. the ordering and direction of memory writes in GRAM)
     const uint8_t madctl[] = {
@@ -55,10 +53,10 @@ __attribute__((weak)) bool qp_ssd1351_init(painter_device_t device, painter_rota
         [QP_ROTATION_180] = SSD1351_MADCTL_BGR | SSD1351_MADCTL_MX,
         [QP_ROTATION_270] = SSD1351_MADCTL_BGR | SSD1351_MADCTL_MV,
     };
-    if (!qp_comms_command_databyte(device, SSD1351_SETREMAP, madctl[rotation])) {
-        return false;
-    }
-    return qp_comms_command_databyte(device, SSD1351_STARTLINE, (rotation == QP_ROTATION_0 || rotation == QP_ROTATION_90) ? driver->base.panel_height : 0);
+    qp_comms_command_databyte(device, SSD1351_SETREMAP, madctl[rotation]);
+    qp_comms_command_databyte(device, SSD1351_STARTLINE, (rotation == QP_ROTATION_0 || rotation == QP_ROTATION_90) ? driver->base.panel_height : 0);
+
+    return true;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

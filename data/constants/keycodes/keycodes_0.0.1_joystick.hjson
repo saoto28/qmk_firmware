@@ -3,7 +3,6 @@
         "0x7400": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_0",
-            "label": "Button 0",
             "aliases": [
                 "JS_0"
             ]
@@ -11,7 +10,6 @@
         "0x7401": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_1",
-            "label": "Button 1",
             "aliases": [
                 "JS_1"
             ]
@@ -19,7 +17,6 @@
         "0x7402": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_2",
-            "label": "Button 2",
             "aliases": [
                 "JS_2"
             ]
@@ -27,7 +24,6 @@
         "0x7403": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_3",
-            "label": "Button 3",
             "aliases": [
                 "JS_3"
             ]
@@ -35,7 +31,6 @@
         "0x7404": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_4",
-            "label": "Button 4",
             "aliases": [
                 "JS_4"
             ]
@@ -43,7 +38,6 @@
         "0x7405": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_5",
-            "label": "Button 5",
             "aliases": [
                 "JS_5"
             ]
@@ -51,7 +45,6 @@
         "0x7406": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_6",
-            "label": "Button 6",
             "aliases": [
                 "JS_6"
             ]
@@ -59,7 +52,6 @@
         "0x7407": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_7",
-            "label": "Button 7",
             "aliases": [
                 "JS_7"
             ]
@@ -67,7 +59,6 @@
         "0x7408": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_8",
-            "label": "Button 8",
             "aliases": [
                 "JS_8"
             ]
@@ -75,7 +66,6 @@
         "0x7409": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_9",
-            "label": "Button 9",
             "aliases": [
                 "JS_9"
             ]
@@ -83,7 +73,6 @@
         "0x740A": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_10",
-            "label": "Button 10",
             "aliases": [
                 "JS_10"
             ]
@@ -91,7 +80,6 @@
         "0x740B": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_11",
-            "label": "Button 11",
             "aliases": [
                 "JS_11"
             ]
@@ -99,7 +87,6 @@
         "0x740C": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_12",
-            "label": "Button 12",
             "aliases": [
                 "JS_12"
             ]
@@ -107,7 +94,6 @@
         "0x740D": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_13",
-            "label": "Button 13",
             "aliases": [
                 "JS_13"
             ]
@@ -115,7 +101,6 @@
         "0x740E": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_14",
-            "label": "Button 14",
             "aliases": [
                 "JS_14"
             ]
@@ -123,7 +108,6 @@
         "0x740F": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_15",
-            "label": "Button 15",
             "aliases": [
                 "JS_15"
             ]
@@ -131,7 +115,6 @@
         "0x7410": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_16",
-            "label": "Button 16",
             "aliases": [
                 "JS_16"
             ]
@@ -139,7 +122,6 @@
         "0x7411": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_17",
-            "label": "Button 17",
             "aliases": [
                 "JS_17"
             ]
@@ -147,7 +129,6 @@
         "0x7412": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_18",
-            "label": "Button 18",
             "aliases": [
                 "JS_18"
             ]
@@ -155,7 +136,6 @@
         "0x7413": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_19",
-            "label": "Button 19",
             "aliases": [
                 "JS_19"
             ]
@@ -163,7 +143,6 @@
         "0x7414": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_20",
-            "label": "Button 20",
             "aliases": [
                 "JS_20"
             ]
@@ -171,7 +150,6 @@
         "0x7415": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_21",
-            "label": "Button 21",
             "aliases": [
                 "JS_21"
             ]
@@ -179,7 +157,6 @@
         "0x7416": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_22",
-            "label": "Button 22",
             "aliases": [
                 "JS_22"
             ]
@@ -187,7 +164,6 @@
         "0x7417": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_23",
-            "label": "Button 23",
             "aliases": [
                 "JS_23"
             ]
@@ -195,7 +171,6 @@
         "0x7418": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_24",
-            "label": "Button 24",
             "aliases": [
                 "JS_24"
             ]
@@ -203,7 +178,6 @@
         "0x7419": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_25",
-            "label": "Button 25",
             "aliases": [
                 "JS_25"
             ]
@@ -211,7 +185,6 @@
         "0x741A": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_26",
-            "label": "Button 26",
             "aliases": [
                 "JS_26"
             ]
@@ -219,7 +192,6 @@
         "0x741B": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_27",
-            "label": "Button 27",
             "aliases": [
                 "JS_27"
             ]
@@ -227,7 +199,6 @@
         "0x741C": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_28",
-            "label": "Button 28",
             "aliases": [
                 "JS_28"
             ]
@@ -235,7 +206,6 @@
         "0x741D": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_29",
-            "label": "Button 29",
             "aliases": [
                 "JS_29"
             ]
@@ -243,7 +213,6 @@
         "0x741E": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_30",
-            "label": "Button 30",
             "aliases": [
                 "JS_30"
             ]
@@ -251,7 +220,6 @@
         "0x741F": {
             "group": "joystick",
             "key": "QK_JOYSTICK_BUTTON_31",
-            "label": "Button 31",
             "aliases": [
                 "JS_31"
             ]

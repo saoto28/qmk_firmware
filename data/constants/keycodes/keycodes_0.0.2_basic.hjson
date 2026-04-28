@@ -3,7 +3,7 @@
         "0x00C1": {
             "group": "media",
             "key": "KC_MISSION_CONTROL",
-            "label": "Mission Control",
+            "label": "Open Mission Control",
             "aliases": [
                 "KC_MCTL"
             ]
@@ -11,7 +11,7 @@
         "0x00C2": {
             "group": "media",
             "key": "KC_LAUNCHPAD",
-            "label": "Launchpad",
+            "label": "Open Launchpad",
             "aliases": [
                 "KC_LPAD"
             ]

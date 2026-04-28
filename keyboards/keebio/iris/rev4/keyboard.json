@@ -15,9 +15,6 @@
         ]
     },
     "backlight": {
-        "default": {
-            "brightness": 3
-        }, 
         "pin": "B5",
         "levels": 5
     },

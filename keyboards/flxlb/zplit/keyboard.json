@@ -1,6 +1,7 @@
 {
     "keyboard_name": "zplit",
     "manufacturer": "fluxlab",
+    "url": "https://github.com/cccywj/qmk_firmware",
     "maintainer": "flxlb",
     "usb": {
         "vid": "0x7076",
@@ -10,6 +11,7 @@
     "features": {
         "bootmagic": false,
         "command": true,
+        "console": false,
         "encoder": true,
         "extrakey": true,
         "mousekey": false,

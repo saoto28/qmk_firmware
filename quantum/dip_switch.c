@@ -21,7 +21,6 @@
 #include "dip_switch.h"
 
 #ifdef SPLIT_KEYBOARD
-#    include "keyboard.h"
 #    include "split_common/split_util.h"
 #endif
 
@@ -88,7 +87,7 @@ static void dip_switch_exec_mapping(uint8_t index, bool on) {
 void dip_switch_init(void) {
 #ifdef DIP_SWITCH_PINS
 #    if defined(SPLIT_KEYBOARD) && defined(DIP_SWITCH_PINS_RIGHT)
-    if (!is_keyboard_left()) {
+    if (!isLeftHand) {
         const pin_t dip_switch_pad_right[] = DIP_SWITCH_PINS_RIGHT;
         for (uint8_t i = 0; i < NUM_DIP_SWITCHES; i++) {
             dip_switch_pad[i] = dip_switch_pad_right[i];

@@ -13,8 +13,8 @@
         ],
         [
             {
-                "ccw": "MS_WHLD",
-                "cw": "MS_WHLU"
+                "ccw": "KC_MS_WH_DOWN",
+                "cw": "KC_MS_WH_UP"
             }
         ]
     ],

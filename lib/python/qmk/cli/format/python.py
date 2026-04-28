@@ -47,7 +47,7 @@ def format_python(cli):
 
         if not files:
             cli.log.error('No Python files in filelist: %s', ', '.join(map(str, cli.args.files)))
-            return False
+            exit(0)
 
         if cli.args.all_files:
             cli.log.warning('Filenames passed with -a, only formatting: %s', ','.join(map(str, files)))

@@ -11,7 +11,6 @@ on:
   pull_request:
     paths:
     - 'builddefs/**'
-    - '!builddefs/docsgen/**'
     - 'quantum/**'
     - 'platforms/**'
     - 'tmk_core/**'
@@ -27,12 +26,10 @@ jobs:
     container: ghcr.io/qmk/qmk_cli
 
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v4
       with:
         submodules: recursive
-
     - name: Install dependencies
       run: pip3 install -r requirements-dev.txt
-
     - name: Run tests
-      run: qmk test-c -j $(nproc)
+      run: qmk test-c

@@ -3,7 +3,6 @@
         "0x7440": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_1",
-            "label": "Button 1",
             "aliases": [
                 "PB_1"
             ]
@@ -11,7 +10,6 @@
         "0x7441": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_2",
-            "label": "Button 2",
             "aliases": [
                 "PB_2"
             ]
@@ -19,7 +17,6 @@
         "0x7442": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_3",
-            "label": "Button 3",
             "aliases": [
                 "PB_3"
             ]
@@ -27,7 +24,6 @@
         "0x7443": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_4",
-            "label": "Button 4",
             "aliases": [
                 "PB_4"
             ]
@@ -35,7 +31,6 @@
         "0x7444": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_5",
-            "label": "Button 5",
             "aliases": [
                 "PB_5"
             ]
@@ -43,7 +38,6 @@
         "0x7445": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_6",
-            "label": "Button 6",
             "aliases": [
                 "PB_6"
             ]
@@ -51,7 +45,6 @@
         "0x7446": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_7",
-            "label": "Button 7",
             "aliases": [
                 "PB_7"
             ]
@@ -59,7 +52,6 @@
         "0x7447": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_8",
-            "label": "Button 8",
             "aliases": [
                 "PB_8"
             ]
@@ -67,7 +59,6 @@
         "0x7448": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_9",
-            "label": "Button 9",
             "aliases": [
                 "PB_9"
             ]
@@ -75,7 +66,6 @@
         "0x7449": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_10",
-            "label": "Button 10",
             "aliases": [
                 "PB_10"
             ]
@@ -83,7 +73,6 @@
         "0x744A": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_11",
-            "label": "Button 11",
             "aliases": [
                 "PB_11"
             ]
@@ -91,7 +80,6 @@
         "0x744B": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_12",
-            "label": "Button 12",
             "aliases": [
                 "PB_12"
             ]
@@ -99,7 +87,6 @@
         "0x744C": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_13",
-            "label": "Button 13",
             "aliases": [
                 "PB_13"
             ]
@@ -107,7 +94,6 @@
         "0x744D": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_14",
-            "label": "Button 14",
             "aliases": [
                 "PB_14"
             ]
@@ -115,7 +101,6 @@
         "0x744E": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_15",
-            "label": "Button 15",
             "aliases": [
                 "PB_15"
             ]
@@ -123,7 +108,6 @@
         "0x744F": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_16",
-            "label": "Button 16",
             "aliases": [
                 "PB_16"
             ]
@@ -131,7 +115,6 @@
         "0x7450": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_17",
-            "label": "Button 17",
             "aliases": [
                 "PB_17"
             ]
@@ -139,7 +122,6 @@
         "0x7451": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_18",
-            "label": "Button 18",
             "aliases": [
                 "PB_18"
             ]
@@ -147,7 +129,6 @@
         "0x7452": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_19",
-            "label": "Button 19",
             "aliases": [
                 "PB_19"
             ]
@@ -155,7 +136,6 @@
         "0x7453": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_20",
-            "label": "Button 20",
             "aliases": [
                 "PB_20"
             ]
@@ -163,7 +143,6 @@
         "0x7454": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_21",
-            "label": "Button 21",
             "aliases": [
                 "PB_21"
             ]
@@ -171,7 +150,6 @@
         "0x7455": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_22",
-            "label": "Button 22",
             "aliases": [
                 "PB_22"
             ]
@@ -179,7 +157,6 @@
         "0x7456": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_23",
-            "label": "Button 23",
             "aliases": [
                 "PB_23"
             ]
@@ -187,7 +164,6 @@
         "0x7457": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_24",
-            "label": "Button 24",
             "aliases": [
                 "PB_24"
             ]
@@ -195,7 +171,6 @@
         "0x7458": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_25",
-            "label": "Button 25",
             "aliases": [
                 "PB_25"
             ]
@@ -203,7 +178,6 @@
         "0x7459": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_26",
-            "label": "Button 26",
             "aliases": [
                 "PB_26"
             ]
@@ -211,7 +185,6 @@
         "0x745A": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_27",
-            "label": "Button 27",
             "aliases": [
                 "PB_27"
             ]
@@ -219,7 +192,6 @@
         "0x745B": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_28",
-            "label": "Button 28",
             "aliases": [
                 "PB_28"
             ]
@@ -227,7 +199,6 @@
         "0x745C": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_29",
-            "label": "Button 29",
             "aliases": [
                 "PB_29"
             ]
@@ -235,7 +206,6 @@
         "0x745D": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_30",
-            "label": "Button 30",
             "aliases": [
                 "PB_30"
             ]
@@ -243,7 +213,6 @@
         "0x745E": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_31",
-            "label": "Button 31",
             "aliases": [
                 "PB_31"
             ]
@@ -251,7 +220,6 @@
         "0x745F": {
             "group": "programmable_button",
             "key": "QK_PROGRAMMABLE_BUTTON_32",
-            "label": "Button 32",
             "aliases": [
                 "PB_32"
             ]

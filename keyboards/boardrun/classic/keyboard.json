@@ -1,6 +1,7 @@
 {
     "keyboard_name": "Boardrun Classic",
     "manufacturer": "shensmobile",
+    "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/boardrun/classic",
     "maintainer": "QMK Community",
     "debounce": 10,
     "usb": {
@@ -31,6 +32,8 @@
     },
     "features": {
         "bootmagic": true,
+        "command": false,
+        "console": false,
         "extrakey": true,
         "mousekey": false,
         "nkro": true,

@@ -1,6 +1,7 @@
 {
     "keyboard_name": "Cor TKL",
     "manufacturer": "concreteflowers",
+    "url": "",
     "maintainer": "ramonimbao",
     "community_layouts": [
       "tkl_f13_ansi",
@@ -16,6 +17,8 @@
         "bootmagic": true,
         "mousekey": true,
         "extrakey": true,
+        "console": false,
+        "command": false,
         "nkro": false,
         "rgb_matrix": true
     },
@@ -32,11 +35,7 @@
         "rows": ["GP0", "GP1", "GP2", "GP21", "GP3", "GP4"]
     },
     "rgb_matrix": {
-      "driver": "ws2812",
-        "layout": [
-            {"matrix": [3, 0], "x": 5, "y": 40, "flags": 8},
-            {"matrix": [0, 15], "x": 211, "y": 0, "flags": 8}
-        ]
+      "driver": "ws2812"
     },
     "ws2812": {
         "pin": "GP19",

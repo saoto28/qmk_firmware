@@ -1,6 +1,7 @@
 {
     "keyboard_name": "DQz11N1G",
     "manufacturer": "Unknown",
+    "url": "https://github.com/dvdkhlng/qmk_firmware_dqz11n1g",
     "maintainer": "dvdkhlng",
     "usb": {
         "vid": "0xFEED",
