@@ -3,8 +3,6 @@
 We list each subcommand here explicitly because all the reliable ways of searching for modules are slow and delay startup.
 """
 import os
-import platform
-import platformdirs
 import shlex
 import sys
 from importlib.util import find_spec
@@ -13,28 +11,6 @@ from subprocess import run
 
 from milc import cli, __VERSION__
 from milc.questions import yesno
-
-
-def _get_default_distrib_path():
-    if 'windows' in platform.platform().lower():
-        try:
-            result = cli.run(['cygpath', '-w', '/opt/qmk'])
-            if result.returncode == 0:
-                return result.stdout.strip()
-        except Exception:
-            pass
-
-    return platformdirs.user_data_dir('qmk')
-
-
-# Ensure the QMK distribution is on the `$PATH` if present. This must be kept in sync with qmk/qmk_cli.
-QMK_DISTRIB_DIR = Path(os.environ.get('QMK_DISTRIB_DIR', _get_default_distrib_path()))
-if QMK_DISTRIB_DIR.exists():
-    os.environ['PATH'] = str(QMK_DISTRIB_DIR / 'bin') + os.pathsep + os.environ['PATH']
-
-# Prepend any user-defined path prefix
-if 'QMK_PATH_PREFIX' in os.environ:
-    os.environ['PATH'] = os.environ['QMK_PATH_PREFIX'] + os.pathsep + os.environ['PATH']
 
 import_names = {
     # A mapping of package name to importable name
@@ -56,7 +32,6 @@ safe_commands = [
 
 subcommands = [
     'qmk.cli.ci.validate_aliases',
-    'qmk.cli.ci.validate_keyboard_targets',
     'qmk.cli.bux',
     'qmk.cli.c2json',
     'qmk.cli.cd',
@@ -83,6 +58,7 @@ subcommands = [
     'qmk.cli.generate.keyboard_c',
     'qmk.cli.generate.keyboard_h',
     'qmk.cli.generate.keycodes',
+    'qmk.cli.generate.keycodes_tests',
     'qmk.cli.generate.keymap_h',
     'qmk.cli.generate.make_dependencies',
     'qmk.cli.generate.rgb_breathe_table',
@@ -239,7 +215,7 @@ if sys.version_info[0] != 3 or sys.version_info[1] < 9:
 
 milc_version = __VERSION__.split('.')
 
-if int(milc_version[0]) < 2 and int(milc_version[1]) < 9:
+if int(milc_version[0]) < 2 and int(milc_version[1]) < 4:
     requirements = Path('requirements.txt').resolve()
 
     _eprint(f'Your MILC library is too old! Please upgrade: python3 -m pip install -U -r {str(requirements)}')

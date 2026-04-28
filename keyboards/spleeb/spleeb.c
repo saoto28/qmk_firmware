@@ -283,6 +283,7 @@ void pointing_device_init_kb(void) {
     cirque_pinnacle_enable_cursor_glide(false);
 
     set_auto_mouse_enable(true);
+    pointing_device_init_user();
 }
 
 /**

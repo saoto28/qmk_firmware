@@ -18,6 +18,7 @@
 #    endif
 #endif
 
+bool     touchpad_init;
 uint16_t scale_data = CIRQUE_PINNACLE_DEFAULT_SCALE;
 
 void cirque_pinnacle_clear_flags(void);
@@ -231,14 +232,14 @@ bool cirque_pinnacle_connected(void) {
 }
 
 /*  Pinnacle-based TM040040/TM035035/TM023023 Functions  */
-bool cirque_pinnacle_init(void) {
+void cirque_pinnacle_init(void) {
 #if defined(POINTING_DEVICE_DRIVER_cirque_pinnacle_spi)
     spi_init();
 #elif defined(POINTING_DEVICE_DRIVER_cirque_pinnacle_i2c)
     i2c_init();
 #endif
 
-    bool touchpad_init = true;
+    touchpad_init = true;
 
     // send a RESET command now, in case QMK had a soft-reset without a power cycle
     RAP_Write(HOSTREG__SYSCONFIG1, HOSTREG__SYSCONFIG1__RESET);
@@ -292,8 +293,6 @@ bool cirque_pinnacle_init(void) {
 #ifndef CIRQUE_PINNACLE_SKIP_SENSOR_CHECK
     touchpad_init = cirque_pinnacle_connected();
 #endif
-
-    return touchpad_init;
 }
 
 pinnacle_data_t cirque_pinnacle_read_data(void) {
@@ -477,9 +476,9 @@ report_mouse_t cirque_pinnacle_get_report(report_mouse_t mouse_report) {
 
     if (touchData.valid) {
         mouse_report.buttons = touchData.buttons;
-        mouse_report.x       = CONSTRAIN_HID_XY(touchData.xDelta);
-        mouse_report.y       = CONSTRAIN_HID_XY(touchData.yDelta);
-        mouse_report.v       = touchData.wheelCount;
+        mouse_report.x = CONSTRAIN_HID_XY(touchData.xDelta);
+        mouse_report.y = CONSTRAIN_HID_XY(touchData.yDelta);
+        mouse_report.v = touchData.wheelCount;
     }
     return mouse_report;
 }

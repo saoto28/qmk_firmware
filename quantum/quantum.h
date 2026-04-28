@@ -39,7 +39,6 @@
 #include "keymap_common.h"
 #include "quantum_keycodes.h"
 #include "keycode_config.h"
-#include "keycode_string.h"
 #include "action_layer.h"
 #include "eeconfig.h"
 #include "bootloader.h"
@@ -61,10 +60,6 @@
 
 #ifdef BOOTMAGIC_ENABLE
 #    include "bootmagic.h"
-#endif
-
-#ifdef BATTERY_ENABLE
-#    include "battery.h"
 #endif
 
 #ifdef DEFERRED_EXEC_ENABLE
@@ -267,6 +262,7 @@ uint16_t get_event_keycode(keyevent_t event, bool update_layer_cache);
 bool     pre_process_record_quantum(keyrecord_t *record);
 bool     pre_process_record_kb(uint16_t keycode, keyrecord_t *record);
 bool     pre_process_record_user(uint16_t keycode, keyrecord_t *record);
+bool     process_action_kb(keyrecord_t *record);
 bool     process_record_kb(uint16_t keycode, keyrecord_t *record);
 bool     process_record_user(uint16_t keycode, keyrecord_t *record);
 void     post_process_record_kb(uint16_t keycode, keyrecord_t *record);

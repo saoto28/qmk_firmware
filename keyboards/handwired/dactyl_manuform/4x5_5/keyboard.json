@@ -1,6 +1,7 @@
 {
     "keyboard_name": "Dactyl ManuForm 4x5_5",
     "manufacturer": "ssedrick",
+    "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform/4x5_5",
     "maintainer": "ssedrick",
     "usb": {
         "vid": "0x444D",
@@ -10,6 +11,7 @@
     "features": {
         "bootmagic": false,
         "command": true,
+        "console": false,
         "extrakey": true,
         "mousekey": true,
         "nkro": true
@@ -27,9 +29,7 @@
     "diode_direction": "COL2ROW",
     "split": {
         "enabled": true,
-        "serial": {
-            "pin": "D0"
-        }
+        "soft_serial_pin": "D0"
     },
     "development_board": "promicro",
     "layouts": {

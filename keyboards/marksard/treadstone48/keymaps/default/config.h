@@ -45,3 +45,5 @@
 
 // If you plug in the USB on the right side, please enable MASTER_RIGHT
 // #define RHYMESTONE_RIGHTHAND
+
+#define OLED_FONT_H "keyboards/marksard/treadstone48/common/glcdfont.c"

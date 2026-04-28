@@ -53,10 +53,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // For 90 degree rotation, we map our internal matrix to oled matrix using fixed arrays
 // The OLED writes to it's memory horizontally, starting top left, but our memory starts bottom left in this mode
 #    ifndef OLED_SOURCE_MAP
-#        define OLED_SOURCE_MAP {0, 8, 16, 24, 32, 40, 48, 56}
+#        define OLED_SOURCE_MAP \
+            { 0, 8, 16, 24, 32, 40, 48, 56 }
 #    endif
 #    ifndef OLED_TARGET_MAP
-#        define OLED_TARGET_MAP {56, 48, 40, 32, 24, 16, 8, 0}
+#        define OLED_TARGET_MAP \
+            { 56, 48, 40, 32, 24, 16, 8, 0 }
 #    endif
 // If OLED_BLOCK_TYPE is uint32_t, these tables would look like:
 // #define OLED_SOURCE_MAP { 32, 40, 48, 56 }
@@ -95,10 +97,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    endif
 
 #    ifndef OLED_SOURCE_MAP
-#        define OLED_SOURCE_MAP {0, 8, 16, 24}
+#        define OLED_SOURCE_MAP \
+            { 0, 8, 16, 24 }
 #    endif
 #    ifndef OLED_TARGET_MAP
-#        define OLED_TARGET_MAP {24, 16, 8, 0}
+#        define OLED_TARGET_MAP \
+            { 24, 16, 8, 0 }
 #    endif
 
 #elif defined(OLED_DISPLAY_64X48)
@@ -128,10 +132,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    endif
 
 #    ifndef OLED_SOURCE_MAP
-#        define OLED_SOURCE_MAP {0, 8}
+#        define OLED_SOURCE_MAP \
+            { 0, 8 }
 #    endif
 #    ifndef OLED_TARGET_MAP
-#        define OLED_TARGET_MAP {8, 0}
+#        define OLED_TARGET_MAP \
+            { 8, 0 }
 #    endif
 
 #elif defined(OLED_DISPLAY_64X128)
@@ -164,10 +170,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    endif
 
 #    ifndef OLED_SOURCE_MAP
-#        define OLED_SOURCE_MAP {0, 8, 16, 24, 32, 40, 48, 56}
+#        define OLED_SOURCE_MAP \
+            { 0, 8, 16, 24, 32, 40, 48, 56 }
 #    endif
 #    ifndef OLED_TARGET_MAP
-#        define OLED_TARGET_MAP {56, 48, 40, 32, 24, 16, 8, 0}
+#        define OLED_TARGET_MAP \
+            { 56, 48, 40, 32, 24, 16, 8, 0 }
 #    endif
 
 #elif defined(OLED_DISPLAY_128X128)
@@ -200,10 +208,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // For 90 degree rotation, we map our internal matrix to oled matrix using fixed arrays
 // The OLED writes to it's memory horizontally, starting top left, but our memory starts bottom left in this mode
 #    ifndef OLED_SOURCE_MAP
-#        define OLED_SOURCE_MAP {0, 8, 16, 24, 32, 40, 48, 56}
+#        define OLED_SOURCE_MAP \
+            { 0, 8, 16, 24, 32, 40, 48, 56 }
 #    endif
 #    ifndef OLED_TARGET_MAP
-#        define OLED_TARGET_MAP {56, 48, 40, 32, 24, 16, 8, 0}
+#        define OLED_TARGET_MAP \
+            { 56, 48, 40, 32, 24, 16, 8, 0 }
 #    endif
 #else // defined(OLED_DISPLAY_128X64)
 // Default 128x32
@@ -232,10 +242,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // For 90 degree rotation, we map our internal matrix to oled matrix using fixed arrays
 // The OLED writes to it's memory horizontally, starting top left, but our memory starts bottom left in this mode
 #    ifndef OLED_SOURCE_MAP
-#        define OLED_SOURCE_MAP {0, 8, 16, 24}
+#        define OLED_SOURCE_MAP \
+            { 0, 8, 16, 24 }
 #    endif
 #    ifndef OLED_TARGET_MAP
-#        define OLED_TARGET_MAP {24, 16, 8, 0}
+#        define OLED_TARGET_MAP \
+            { 24, 16, 8, 0 }
 #    endif
 // If OLED_BLOCK_TYPE is uint8_t, these tables would look like:
 // #define OLED_SOURCE_MAP { 0, 8, 16, 24, 32, 40, 48, 56 }

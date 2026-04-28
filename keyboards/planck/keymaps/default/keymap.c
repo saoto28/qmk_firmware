@@ -215,9 +215,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (!eeconfig_is_enabled()) {
             eeconfig_init();
         }
-        eeconfig_read_keymap(&keymap_config);
+        keymap_config.raw = eeconfig_read_keymap();
         keymap_config.nkro = 1;
-        eeconfig_update_keymap(&keymap_config);
+        eeconfig_update_keymap(keymap_config.raw);
       }
       return false;
       break;
@@ -258,13 +258,13 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
   } else {
     if (clockwise) {
       #ifdef MOUSEKEY_ENABLE
-        tap_code(MS_WHLD);
+        tap_code(KC_MS_WH_DOWN);
       #else
         tap_code(KC_PGDN);
       #endif
     } else {
       #ifdef MOUSEKEY_ENABLE
-        tap_code(MS_WHLU);
+        tap_code(KC_MS_WH_UP);
       #else
         tap_code(KC_PGUP);
       #endif

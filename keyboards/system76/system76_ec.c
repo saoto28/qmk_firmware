@@ -135,7 +135,7 @@ static enum rgb_matrix_effects mode_map[] = {
 
 _Static_assert(sizeof(mode_map) == MODE_LAST, "mode_map_length");
 
-rgb_t raw_rgb_data[RGB_MATRIX_LED_COUNT] = {0};
+rgb_t raw_rgb_data[RGB_MATRIX_LED_COUNT];
 
 // clang-format off
 rgb_config_t layer_rgb[DYNAMIC_KEYMAP_LAYER_COUNT] = {

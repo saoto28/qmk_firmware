@@ -1,6 +1,7 @@
 {
     "keyboard_name": "Mino",
     "manufacturer": "ShandonCodes",
+    "url": "https://qmk.fm/keyboards/",
     "maintainer": "ShandonCodes",
     "usb": {
         "vid": "0x7877",
@@ -9,6 +10,8 @@
     },
     "features": {
         "bootmagic": true,
+        "command": false,
+        "console": false,
         "extrakey": true,
         "mousekey": true,
         "nkro": false,
@@ -26,7 +29,8 @@
         "rows": ["D3", "C6", "D4", "D2"]
     },
     "diode_direction": "COL2ROW",
-    "development_board": "promicro",
+    "processor": "atmega32u4",
+    "bootloader": "caterina",
     "layouts": {
         "LAYOUT_default": {
             "layout": [

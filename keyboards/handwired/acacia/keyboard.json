@@ -2,6 +2,7 @@
     "keyboard_name": "Acacia",
     "manufacturer": "jpsecher",
     "maintainer": "jpsecher",
+    "url": "https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/acacia",
     "processor": "atmega32u2",
     "bootloader": "atmel-dfu",
     "bootloader_instructions": "Enter the bootloader by using the small buttons on the PCB: press the RESET button while connected to QMK Toolbox.",
@@ -11,6 +12,8 @@
     },
     "features": {
         "bootmagic": true,
+        "command": false,
+        "console": false,
         "extrakey": true,
         "mousekey": true,
         "nkro": false

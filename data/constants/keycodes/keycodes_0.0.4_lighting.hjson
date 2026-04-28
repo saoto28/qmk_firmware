@@ -3,7 +3,6 @@
         "0x7810": {
             "group": "led_matrix",
             "key": "QK_LED_MATRIX_ON",
-            "label": "LED Matrix On",
             "aliases": [
                 "LM_ON"
             ]
@@ -11,7 +10,6 @@
         "0x7811": {
             "group": "led_matrix",
             "key": "QK_LED_MATRIX_OFF",
-            "label": "LED Matrix Off",
             "aliases": [
                 "LM_OFF"
             ]
@@ -19,7 +17,6 @@
         "0x7812": {
             "group": "led_matrix",
             "key": "QK_LED_MATRIX_TOGGLE",
-            "label": "Toggle LED Matrix",
             "aliases": [
                 "LM_TOGG"
             ]
@@ -27,7 +24,6 @@
         "0x7813": {
             "group": "led_matrix",
             "key": "QK_LED_MATRIX_MODE_NEXT",
-            "label": "LED Matrix Next",
             "aliases": [
                 "LM_NEXT"
             ]
@@ -35,7 +31,6 @@
         "0x7814": {
             "group": "led_matrix",
             "key": "QK_LED_MATRIX_MODE_PREVIOUS",
-            "label": "LED Matrix Previous",
             "aliases": [
                 "LM_PREV"
             ]
@@ -43,7 +38,6 @@
         "0x7815": {
             "group": "led_matrix",
             "key": "QK_LED_MATRIX_BRIGHTNESS_UP",
-            "label": "LED Matrix Brightness Up",
             "aliases": [
                 "LM_BRIU"
             ]
@@ -51,7 +45,6 @@
         "0x7816": {
             "group": "led_matrix",
             "key": "QK_LED_MATRIX_BRIGHTNESS_DOWN",
-            "label": "LED Matrix Brightness Down",
             "aliases": [
                 "LM_BRID"
             ]
@@ -59,7 +52,6 @@
         "0x7817": {
             "group": "led_matrix",
             "key": "QK_LED_MATRIX_SPEED_UP",
-            "label": "LED Matrix Speed Up",
             "aliases": [
                 "LM_SPDU"
             ]
@@ -67,7 +59,6 @@
         "0x7818": {
             "group": "led_matrix",
             "key": "QK_LED_MATRIX_SPEED_DOWN",
-            "label": "LED Matrix Speed Down",
             "aliases": [
                 "LM_SPDD"
             ]
@@ -76,7 +67,6 @@
         "0x7820": {
             "group": "underglow",
             "key": "QK_UNDERGLOW_TOGGLE",
-            "label": "Toggle RGB Underglow",
             "aliases": [
                 "UG_TOGG"
             ]
@@ -84,7 +74,6 @@
         "0x7821": {
             "group": "underglow",
             "key": "QK_UNDERGLOW_MODE_NEXT",
-            "label": "RGB Underglow Next",
             "aliases": [
                 "!reset!",
                 "UG_NEXT"
@@ -93,7 +82,6 @@
         "0x7822": {
             "group": "underglow",
             "key": "QK_UNDERGLOW_MODE_PREVIOUS",
-            "label": "RGB Underglow Previous",
             "aliases": [
                 "!reset!",
                 "UG_PREV"
@@ -102,7 +90,6 @@
         "0x7823": {
             "group": "underglow",
             "key": "QK_UNDERGLOW_HUE_UP",
-            "label": "RGB Underglow Hue Up",
             "aliases": [
                 "UG_HUEU"
             ]
@@ -110,7 +97,6 @@
         "0x7824": {
             "group": "underglow",
             "key": "QK_UNDERGLOW_HUE_DOWN",
-            "label": "RGB Underglow Hue Down",
             "aliases": [
                 "UG_HUED"
             ]
@@ -118,7 +104,6 @@
         "0x7825": {
             "group": "underglow",
             "key": "QK_UNDERGLOW_SATURATION_UP",
-            "label": "RGB Underglow Saturation Up",
             "aliases": [
                 "UG_SATU"
             ]
@@ -126,7 +111,6 @@
         "0x7826": {
             "group": "underglow",
             "key": "QK_UNDERGLOW_SATURATION_DOWN",
-            "label": "RGB Underglow Saturation Down",
             "aliases": [
                 "UG_SATD"
             ]
@@ -134,7 +118,6 @@
         "0x7827": {
             "group": "underglow",
             "key": "QK_UNDERGLOW_VALUE_UP",
-            "label": "RGB Underglow Value Up",
             "aliases": [
                 "UG_VALU"
             ]
@@ -142,7 +125,6 @@
         "0x7828": {
             "group": "underglow",
             "key": "QK_UNDERGLOW_VALUE_DOWN",
-            "label": "RGB Underglow Value Down",
             "aliases": [
                 "UG_VALD"
             ]
@@ -150,7 +132,6 @@
         "0x7829": {
             "group": "underglow",
             "key": "QK_UNDERGLOW_SPEED_UP",
-            "label": "RGB Underglow Speed Up",
             "aliases": [
                 "UG_SPDU"
             ]
@@ -158,7 +139,6 @@
         "0x782A": {
             "group": "underglow",
             "key": "QK_UNDERGLOW_SPEED_DOWN",
-            "label": "RGB Underglow Speed Down",
             "aliases": [
                 "UG_SPDD"
             ]
@@ -167,7 +147,6 @@
         "0x7840": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_ON",
-            "label": "RGB Matrix On",
             "aliases": [
                 "RM_ON"
             ]
@@ -175,7 +154,6 @@
         "0x7841": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_OFF",
-            "label": "RGB Matrix Off"
             "aliases": [
                 "RM_OFF"
             ]
@@ -183,7 +161,6 @@
         "0x7842": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_TOGGLE",
-            "label": "Toggle RGB Matrix",
             "aliases": [
                 "RM_TOGG"
             ]
@@ -191,7 +168,6 @@
         "0x7843": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_MODE_NEXT",
-            "label": "RGB Matrix Next",
             "aliases": [
                 "RM_NEXT"
             ]
@@ -199,7 +175,6 @@
         "0x7844": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_MODE_PREVIOUS",
-            "label": "RGB Matrix Previous",
             "aliases": [
                 "RM_PREV"
             ]
@@ -207,7 +182,6 @@
         "0x7845": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_HUE_UP",
-            "label": "RGB Matrix Hue Up",
             "aliases": [
                 "RM_HUEU"
             ]
@@ -215,7 +189,6 @@
         "0x7846": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_HUE_DOWN",
-            "label": "RGB Matrix Hue Down",
             "aliases": [
                 "RM_HUED"
             ]
@@ -223,7 +196,6 @@
         "0x7847": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_SATURATION_UP",
-            "label": "RGB Matrix Saturation Up",
             "aliases": [
                 "RM_SATU"
             ]
@@ -231,7 +203,6 @@
         "0x7848": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_SATURATION_DOWN",
-            "label": "RGB Matrix Saturation Down",
             "aliases": [
                 "RM_SATD"
             ]
@@ -239,7 +210,6 @@
         "0x7849": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_VALUE_UP",
-            "label": "RGB Matrix Value Up",
             "aliases": [
                 "RM_VALU"
             ]
@@ -247,7 +217,6 @@
         "0x784A": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_VALUE_DOWN",
-            "label": "RGB Matrix Value Down",
             "aliases": [
                 "RM_VALD"
             ]
@@ -255,7 +224,6 @@
         "0x784B": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_SPEED_UP",
-            "label": "RGB Matrix Speed Up",
             "aliases": [
                 "RM_SPDU"
             ]
@@ -263,7 +231,6 @@
         "0x784C": {
             "group": "rgb_matrix",
             "key": "QK_RGB_MATRIX_SPEED_DOWN",
-            "label": "RGB Matrix Speed Down",
             "aliases": [
                 "RM_SPDD"
             ]

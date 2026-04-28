@@ -4,7 +4,7 @@ permissions: {}
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   automatic_approve:

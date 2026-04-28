@@ -27,6 +27,8 @@
 #    define ENCODER_DEFAULT_PIN_API_IMPL
 #endif
 
+extern volatile bool isLeftHand;
+
 __attribute__((weak)) void    encoder_quadrature_init_pin(uint8_t index, bool pad_b);
 __attribute__((weak)) uint8_t encoder_quadrature_read_pin(uint8_t index, bool pad_b);
 
@@ -106,12 +108,12 @@ void encoder_quadrature_post_init(void) {
 
 void encoder_driver_init(void) {
 #ifdef SPLIT_KEYBOARD
-    thisHand  = is_keyboard_left() ? 0 : NUM_ENCODERS_LEFT;
+    thisHand  = isLeftHand ? 0 : NUM_ENCODERS_LEFT;
     thatHand  = NUM_ENCODERS_LEFT - thisHand;
-    thisCount = is_keyboard_left() ? NUM_ENCODERS_LEFT : NUM_ENCODERS_RIGHT;
-    thatCount = is_keyboard_left() ? NUM_ENCODERS_RIGHT : NUM_ENCODERS_LEFT;
+    thisCount = isLeftHand ? NUM_ENCODERS_LEFT : NUM_ENCODERS_RIGHT;
+    thatCount = isLeftHand ? NUM_ENCODERS_RIGHT : NUM_ENCODERS_LEFT;
 #else // SPLIT_KEYBOARD
-    thisCount = NUM_ENCODERS;
+    thisCount                = NUM_ENCODERS;
 #endif
 
 #ifdef ENCODER_TESTS
@@ -131,7 +133,7 @@ void encoder_driver_init(void) {
 
 #if defined(SPLIT_KEYBOARD) && defined(ENCODER_A_PINS_RIGHT) && defined(ENCODER_B_PINS_RIGHT)
     // Re-initialise the pads if it's the right-hand side
-    if (!is_keyboard_left()) {
+    if (!isLeftHand) {
         const pin_t encoders_pad_a_right[] = ENCODER_A_PINS_RIGHT;
         const pin_t encoders_pad_b_right[] = ENCODER_B_PINS_RIGHT;
         for (uint8_t i = 0; i < thisCount; i++) {

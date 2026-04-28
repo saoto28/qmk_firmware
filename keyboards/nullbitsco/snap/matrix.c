@@ -13,9 +13,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <string.h>
 #include "matrix.h"
-#include "keyboard.h"
+#include <string.h>
 #include "split_util.h"
 #include "wait.h"
 
@@ -52,7 +51,7 @@ static void init_pins(void) {
     }
 
     // Set extended pin (only on right side)
-    if (!is_keyboard_left()) {
+    if (!isLeftHand) {
         // Set extended pin to input, pullup
         gpio_set_pin_input_high(MATRIX_EXT_PIN_RIGHT);
     }
@@ -82,7 +81,7 @@ static void read_rows_on_col(matrix_row_t current_matrix[], uint8_t current_col)
 
 static void read_ext_pin(matrix_row_t current_matrix[]) {
     // Read the state of the extended matrix pin
-    if (!is_keyboard_left()) {
+    if (!isLeftHand) {
         if (gpio_read_pin(MATRIX_EXT_PIN_RIGHT) == 0) {
             current_matrix[EXT_PIN_ROW] |= (COL_SHIFTER << EXT_PIN_COL);
         } else {
@@ -92,7 +91,7 @@ static void read_ext_pin(matrix_row_t current_matrix[]) {
 }
 
 void matrix_init_custom(void) {
-    if (!is_keyboard_left()) {
+    if (!isLeftHand) {
         row_pins = row_pins_right;
         col_pins = col_pins_right;
     }

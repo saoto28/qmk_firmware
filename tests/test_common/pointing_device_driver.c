@@ -22,9 +22,8 @@ typedef struct {
 
 static pd_config_t pd_config = {0};
 
-bool pointing_device_driver_init(void) {
+void pointing_device_driver_init(void) {
     pd_set_init(true);
-    return pd_config.initiated;
 }
 
 report_mouse_t pointing_device_driver_get_report(report_mouse_t mouse_report) {
