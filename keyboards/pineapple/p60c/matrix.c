@@ -1,5 +1,6 @@
 #include "matrix.h"
 #include "wait.h"
+#include "print.h"
 #include <util/delay.h>
 
 #define I2C_SCL D2
@@ -104,6 +105,7 @@ bool matrix_scan_custom(matrix_row_t current_matrix[]) {
         if (current_matrix[row] != new_val) {
             current_matrix[row] = new_val;
             changed = true;
+            uprintf("L row=%d val=%02X\n", row, new_val);
         }
     }
     mcp_write(MCP_OLATB, 0xFF);
@@ -123,6 +125,7 @@ bool matrix_scan_custom(matrix_row_t current_matrix[]) {
         if (current_matrix[row + 5] != new_val) {
             current_matrix[row + 5] = new_val;
             changed = true;
+            uprintf("R row=%d val=%04X\n", row, new_val);
         }
         gpio_write_pin_high(right_rows[row]);
     }

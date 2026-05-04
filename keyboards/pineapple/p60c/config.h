@@ -1,7 +1,7 @@
 #pragma once
 
-#define MATRIX_ROWS 10
-#define MATRIX_COLS 15
+// #define MATRIX_ROWS 10
+// #define MATRIX_COLS 15
 
 // PS/2 TrackPoint
 #define PS2_CLOCK_PIN D0
