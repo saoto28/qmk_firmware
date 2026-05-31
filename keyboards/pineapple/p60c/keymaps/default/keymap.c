@@ -36,7 +36,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
+// #ifdef PS2_MOUSE_ENABLE
 void ps2_mouse_init_user(void) {
     ps2_host_send(0xF3);  // set sample rate
     ps2_host_send(200);   // 200 samples/sec
+
+    // TrackPointの感度（Sensitivity）を変更するコマンド群
+    // 0xE2 (書き込み準備) -> 0x81 (レジスタ指定) -> 0x4A (感度アドレス) -> 設定値
+    ps2_host_send(0xE2);
+    ps2_host_send(0x81);
+    ps2_host_send(0x4A); // 感度を指定
+    ps2_host_send(0xFF); // 値を「200」に設定（デフォルト値は約128、最大255）
 }
+// #endif
